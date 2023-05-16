@@ -11,11 +11,11 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+
+"scripts": {
+    "test": "NODE_OPTIONS=--openssl-legacy-provider jest --no-color 2>output.txt",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server --mode development --watch --open --hot",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider webpack --mode production"
   },
   "eslintConfig": {
     "extends": [
